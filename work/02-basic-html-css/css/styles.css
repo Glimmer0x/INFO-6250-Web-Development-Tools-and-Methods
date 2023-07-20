@@ -1,0 +1,20 @@
+header, footer {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a {
+    color: greenyellow;
+}
+
+main {
+    background-color: whitesmoke;
+    color: #000;
+}

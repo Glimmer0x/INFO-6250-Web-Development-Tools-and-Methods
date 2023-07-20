@@ -1,0 +1,61 @@
+header,
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a {
+    color: greenyellow;
+}
+
+main {
+    background-color: whitesmoke;
+    color: #000;
+    padding: 1rem;
+}
+
+input,
+input:before,
+input:after {
+    box-sizing: border-box;
+}
+
+.msg-error{
+    color: red;
+}
+
+.hidden {
+    display: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.loader {
+    border-top: 1rem solid blue;
+    border-right: 1rem solid green;
+    border-bottom: 1rem solid red;
+    border-left: 1rem solid pink;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    margin-left: calc(50% - 2rem);
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

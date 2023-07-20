@@ -1,0 +1,87 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Game Page</title>
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="home.css">
+    </head>
+        <body>
+            <header>
+                <h1>Word Game</h1>
+            </header>
+            <main>
+                <div class="block-possible-words">
+                    <ul class="list-possible-words">
+                        <li class="list-title">Possible words:</li>
+                        <li>word</li>
+                        <li>word</li>
+                        <li>word</li>
+                        <li>word</li>
+                        <li>word</li>
+                    </ul>
+
+                </div>
+                <div class="block-game-panel">
+                    <span class="data-message">
+                        You are in game!
+                        Guessing word: guess, is invalid!
+                        You have won the game!
+                    </span>
+                    <div class="panel-data">
+                        <span class="data-count-valid-guesses"> 
+                            Count of valid guesses: 1
+                        </span>
+                        <span class="data-recent-valid-guess">
+                            Recent valid guess: guess
+                        </span>
+                        <span class="data-matched-letters">
+                            Matched letters: 1
+                        </span>
+                    </div>
+
+                    <div class="panel-operations">
+                        <form action="/guess" method="post" class="word-field-container">
+                            <label for="word">Make a new guess:</label>
+                            <input type="text" name="word" id="word" class="word-input">
+                            <button class="word-button">Submit</button>
+                        </form>
+                        
+                        <div class="forms-container">
+                            <form action="/new-game" method="post" class="new-game-button-container">
+                                <button class="new-game-button">New Game</button>
+                            </form>
+                            <form action="/logout" method="post" class="logout-button-container">
+                                <button class="logout-button">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="block-historical-guesses">
+                    <ul class="list-historical-guesses">
+                        <li class="list-title">Historical guesses:</li>
+                        <li class="hitorical-item">
+                            <span>Words</span>
+                            <span>Matched letters</span>
+                        </li>
+                        <li class="line"> </li>
+                        <li class="hitorical-item">
+                            <span>guess</span>
+                            <span>1</span>
+                        </li>
+                        <li class="hitorical-item">
+                            <span>guess</span>
+                            <span>1</span>
+                        </li>
+                        <li class="hitorical-item">
+                            <span>guess</span>
+                            <span>1</span>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <p><i>We do not care about your privacy data!</i></p>
+            </footer>
+        </body>
+</html>

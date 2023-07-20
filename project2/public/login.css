@@ -1,0 +1,35 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.username-field-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.username-input {
+    margin-left: 0.5rem;
+}
+
+.login-button {
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .username-field-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login-button,
+    .username-input {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}

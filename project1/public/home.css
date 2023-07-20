@@ -1,0 +1,146 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.list-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+}
+
+.line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: #000;
+}
+
+.block-possible-words{
+    border-right: 0.1rem solid #000;
+}
+
+.block-possible-words ul {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+.block-historical-guesses {
+    border-left: 0.1rem solid #000;
+}
+
+.block-historical-guesses ul {
+    padding-right: 0;
+    padding-left: 2rem;
+}
+
+.hitorical-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-game-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.data-message{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+}
+
+.data-count-valid-guesses, .data-recent-valid-guess, .data-matched-letters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.1rem solid #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.forms-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.word-field-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.word-input {
+    margin-left: 0.5rem;
+}
+
+.word-button {
+    margin-left: 1rem;
+}
+
+.new-game-button {
+    margin-left: 1rem;
+    background-color: chartreuse;
+    border-color: chartreuse;
+    border-radius: 0.2rem;
+}
+
+.logout-button {
+    margin-left: 1rem;
+    background-color: red;
+    border-color: red;
+    border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .forms-container {
+        flex-direction: column;
+    }
+
+    .word-field-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .new-game-button-container {
+        width: 100%;
+    }
+
+    .logout-button-container {
+        width: 100%;
+    }
+
+    .word-button,
+    .new-game-button,
+    .logout-button,
+    .word-input {
+        margin-left: 0;
+        margin-top: 0.1rem;
+        width: 100%;
+    }
+}

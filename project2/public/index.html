@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="common.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Log in</h1>
+    </header>
+    <main>
+        <div id="loader"></div>
+        <form class="login-page">
+            <fieldset>
+                <p><i class="msg-error login-error"></i></p>
+                <legend>Log in</legend>
+                <div class="username-field-container">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" class="username-input">
+                    <button class="login-button">Login</button>
+                </div>
+            </fieldset>
+        </form>
+        <div class="chat-app hidden">
+            <p class="chat-error-container"><i class="msg-error chat-error"></i></p>
+            <ol class="messages">
+                <li>
+                    <div class="message">
+                        <div class="sender-info">
+                            <div class="username-container">
+                                <span class="username"><i>aaaaaaaaaaasdassjdajdhlsdjflajsdnlfjasidjfalsjdflajsdlfkjaskldjflaksjdflkajsdfkljasndfkjasdljfaskdjfklasjdfkjd</i></span>
+                            </div>
+
+                        </div>
+                        <div class="message-text-container">
+                            <p class="message-text">aaaaaaaaaaasdassjdajdhlsdjflajsdnlfjasidjfalsjdflajsdlfkjaskldjflaksjdflkajsdfkljasndfkjasdljfaskdjfklasjdfkjd</p>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <ul class="users">
+                <li>
+                    <div class="user">
+                        <h3 class="users-title">Online Users</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="user">
+                        <span class="username">aaaaaaaaaaasdassjdajdhlsdjflajsdnlfjasidjfalsjdflajsdlfkjaskldjflaksjdflkajsdfkljasndfkjasdljfaskdjfklasjdfkjd</span>
+                    </div>
+                </li>
+            </ul>
+            <button class="logout-button">Logout</button>
+            <div class="outgoing">
+                <div class="send-box">
+                    <input name="sendText" id="sendText" class="to-send" value="" placeholder="Enter message to send" />
+                    <button class="send-button">Send</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <p><i>We do not care about your privacy data!</i></p>
+    </footer>
+</body>
+        
+</html>

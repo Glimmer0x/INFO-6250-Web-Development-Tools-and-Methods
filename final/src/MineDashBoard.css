@@ -1,0 +1,150 @@
+.mine-dashboard {
+    position: absolute;
+    bottom: 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80rem;
+    height: auto;
+}
+
+.mine-rank, .local-transaction-pool {
+    width: 50%;
+    height: auto;
+    border: 0.1rem solid #ffc273;
+    display: flex;
+    flex-direction: column;
+}
+
+.mine-rank {
+    background-color: rgb(24, 26, 27);
+    color: #eee;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.rank-header {
+    margin: 1rem 1rem 0.5rem 1rem;
+    width: auto;
+    height: 1rem;
+    display: flex;
+    padding: 1rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1rem;
+    border: 0.1rem solid #eee;
+}
+
+.rank-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.1rem solid #eee;
+    padding: 0 1rem;
+}
+
+.rank-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.rank-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 30rem;
+    min-height: 10rem;
+    overflow-y: auto;
+}
+
+.rank-item {
+    margin: 0 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #eee;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.rank-position {
+    min-width: 1.375rem;
+    text-align: center;
+    margin-left: 0.5rem;
+    margin-right: .5rem;
+}
+
+.rank-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    margin-right: 1rem;
+    
+}
+
+.rank-your {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 0.1rem solid #eee;
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+
+div::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+
+div::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 6px;
+    border: 3px solid rgb(24, 26, 27);
+}
+
+.button-open {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.button-open img{
+    width: 1rem;
+    height: 1rem;
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+}
+
+.open {
+    transform: rotate(-180deg);
+}
+
+.rank-note {
+    text-align: center;
+    font-size: 0.8rem;
+}

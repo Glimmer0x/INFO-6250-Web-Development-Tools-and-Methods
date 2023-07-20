@@ -1,0 +1,29 @@
+header,
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a {
+    color: greenyellow;
+}
+
+main {
+    background-color: whitesmoke;
+    color: #000;
+    padding: 1rem;
+}
+
+input,
+input:before,
+input:after {
+    box-sizing: border-box;
+}
+
+.warn{
+    color: red;
+}

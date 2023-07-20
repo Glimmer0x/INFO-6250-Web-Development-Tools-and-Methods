@@ -1,0 +1,8 @@
+.main-list {
+    list-style-type: "\1F431";
+}
+
+.main-list-item {
+    border: 1px solid yellowgreen;
+    padding: 10px;
+}
